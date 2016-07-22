@@ -159,9 +159,6 @@ main() {
     args="$args --overwrite=\"$WERCKER_KUBECTL_OVERWRITE\""
   fi
 
-  info "Extracting kubectl command"
-  eval tar xzvf "$WERCKER_STEP_ROOT"/kubectl.tar.gz -C "$WERCKER_STEP_ROOT"
-
   info "Running kubectl command"
   if [ "$WERCKER_KUBECTL_DEBUG" = "true" ]; then
     info "kubectl $global_args $raw_global_args $cmd $args $raw_args"

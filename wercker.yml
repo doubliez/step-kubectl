@@ -34,5 +34,4 @@ build:
                 cp "$WERCKER_ROOT/LICENSE" "$WERCKER_ROOT/README.md" "$WERCKER_ROOT/run.sh" "$WERCKER_ROOT/wercker.yml" "$WERCKER_ROOT/wercker-step.yml" "$WERCKER_OUTPUT_DIR"
                 cp /tmp/kubernetes/kubernetes/platforms/linux/amd64/kubectl "$WERCKER_OUTPUT_DIR/kubectl"
                 chmod ugo+rx "$WERCKER_OUTPUT_DIR/kubectl"
-                tar czvf "$WERCKER_OUTPUT_DIR/kubectl.tar.gz" "$WERCKER_OUTPUT_DIR/kubectl"
-                rm "$WERCKER_OUTPUT_DIR/kubectl"
+
