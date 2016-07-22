@@ -159,7 +159,7 @@ main() {
     args="$args --overwrite=\"$WERCKER_KUBECTL_OVERWRITE\""
   fi
 
-  info "Running kubctl command"
+  info "Running kubectl command"
   if [ "$WERCKER_KUBECTL_DEBUG" = "true" ]; then
     info "kubectl $global_args $raw_global_args $cmd $args $raw_args"
   fi
